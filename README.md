@@ -4,7 +4,7 @@ Welcome to my Linux Projects repository!
 
 This repository documents my hands-on Linux and Bash scripting projects as I prepare for a Junior Cloud Engineer role.
 
-Each project focuses on solving real-world Linux administration tasks while improving my Bash scripting skills.
+Each project focuses on solving practical Linux administration tasks while improving my Bash scripting and automation skills.
 
 ---
 
@@ -17,7 +17,7 @@ Linux-Projects/
 ├── Backup-Automation/
 ├── Log-File-Analyzer/
 ├── User-Management-Tool/
-├── ...
+├── Process-Monitor/
 └── README.md
 ```
 
@@ -25,54 +25,49 @@ Linux-Projects/
 
 # Completed Projects
 
-## 1. System Health Check
+## 1.  System Health Check
 
-**Description**
+A Bash script that monitors basic system health information.
 
-A Bash script that monitors basic system health by displaying:
+### Features
 
-* Hostname
-* System uptime
-* Memory usage
-* Disk usage
-* Running processes
+* Displays hostname
+* Displays system uptime
+* Displays memory usage
+* Displays disk usage
+* Displays running processes
 
-**Skills**
+### Skills
 
-* Variables
+* Bash variables
 * Command substitution
 * `hostname`
 * `uptime`
 * `free`
 * `df`
 * `ps`
-* Bash scripting
 
 ---
 
 ## 2. Backup Automation
 
-**Description**
-
 A Bash script that automatically creates a dated backup folder and copies files into it.
 
-The script checks whether required folders exist before performing the backup.
-
-**Features**
+### Features
 
 * Creates backup folders automatically
-* Uses today's date in folder names
+* Uses the current date for backup folders
 * Copies files safely
-* Validates directories before copying
-* Displays success/error messages
+* Checks whether required directories exist
+* Displays success and error messages
 
-**Skills**
+### Skills
 
 * Variables
 * `mkdir`
 * `cp`
 * `date`
-* Directory checks (`-d`)
+* Directory checks
 * Conditional statements
 * Bash scripting
 
@@ -80,27 +75,17 @@ The script checks whether required folders exist before performing the backup.
 
 ## 3. Log File Analyzer
 
-**Description**
+A Bash script that analyzes a log file and generates a simple report.
 
-A Bash script that analyzes a log file and generates a report.
+### Features
 
-The script counts:
+* Checks whether the log file exists
+* Counts total log entries
+* Counts `ERROR` messages
+* Counts `WARNING` messages
+* Displays a formatted report
 
-* Total log entries
-* ERROR messages
-* WARNING messages
-
-It also checks whether the log file exists before running.
-
-**Features**
-
-* Log file validation
-* Error counting
-* Warning counting
-* Total line count
-* Formatted report
-
-**Skills**
+### Skills
 
 * Variables
 * `grep`
@@ -114,49 +99,64 @@ It also checks whether the log file exists before running.
 
 ## 4. User Management Tool
 
-**Description**
-
 A Bash script that automates basic Linux user and group management.
 
-The script checks whether a user and group already exist, creates them when necessary, manages group membership, and verifies that the user was successfully added to the group.
+### Features
 
-**Features**
-
-* Checks whether a user exists
-* Creates a new user when necessary
-* Sets a password for newly created users
+* Checks whether a user already exists
+* Creates a new user when required
 * Checks whether a group exists
-* Creates the group when necessary
-* Adds users to groups
-* Prevents unnecessary duplicate group operations
-* Checks command exit status
-* Verifies group membership
+* Creates the group when required
+* Adds the user to the group
+* Uses command exit status to verify operations
+* Displays appropriate success/error messages
 
-**Skills**
+### Skills
 
+* Bash variables
 * `id`
-* `useradd`
-* `passwd`
 * `getent`
+* `useradd`
 * `groupadd`
 * `usermod`
-* `groups`
-* `grep`
-* `grep -q`
-* Exit status (`$?`)
-* Pipes (`|`)
-* Output redirection
-* `/dev/null`
-* Variables
-* Conditional statements
-* Bash scripting
-* Linux user and group administration
+* `sudo`
+* `if/else`
+* Command exit status
+* Error handling
+* Linux user and group management
 
 ---
 
-#  Upcoming Projects
+## 5. Process Monitor
 
-* Process Monitor
+A Bash script that checks whether a specified process is currently running.
+
+### Features
+
+* Accepts a process name from the user
+* Searches the current process list
+* Determines whether the process is running
+* Displays matching process information
+* Counts matching processes
+* Reports when a process is not found
+
+### Skills
+
+* Bash variables
+* `read`
+* Command substitution
+* `ps`
+* `grep`
+* `wc -l`
+* Pipes (`|`)
+* `if/else`
+* Command exit status
+* Linux process management
+
+---
+
+##  Upcoming Projects
+
 * Package Manager Helper
 * Cron Job Scheduler
 * Network Information Tool
@@ -165,13 +165,13 @@ The script checks whether a user and group already exist, creates them when nece
 
 ---
 
-##Technologies
+##  Technologies
 
 * Ubuntu
 * Bash
+* Linux Command Line
 * Git
 * GitHub
-* Linux Command Line
 
 ---
 
@@ -179,10 +179,13 @@ The script checks whether a user and group already exist, creates them when nece
 
 This repository is part of my Cloud Engineering portfolio and documents my journey learning Linux through practical, real-world projects.
 
+The projects are designed to strengthen my Linux administration, Bash scripting, automation, troubleshooting, and system management skills.
+
 ---
 
-##Author
+##  Author
 
 **Isatou Jobateh (Aisha)**
 
 Learning Linux, AWS, Python, Git, Docker, Terraform, and Cloud Engineering through hands-on projects.
+
