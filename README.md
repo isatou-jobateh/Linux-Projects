@@ -18,6 +18,7 @@ Linux-Projects/
 ├── Log-File-Analyzer/
 ├── User-Management-Tool/
 ├── Process-Monitor/
+├── Package-Manager-Helper/
 └── README.md
 ```
 
@@ -154,10 +155,37 @@ A Bash script that checks whether a specified process is currently running.
 * Linux process management
 
 ---
+## 5. Package Manager Helper
+
+**Description**
+
+A Bash script that checks whether a Linux package is already installed and offers to install it if it is not.
+
+**Features**
+
+- Accepts a package name from the user
+- Checks whether the package is installed
+- Notifies the user if it is already installed
+- Offers to install missing packages
+- Uses `apt` to install packages
+- Checks whether installation was successful
+- Handles cancelled installations
+
+**Skills**
+
+- `dpkg`
+- `apt`
+- `sudo`
+- `/dev/null`
+- Input/output redirection
+- Exit status (`$?`)
+- Variables
+- `read`
+- Conditional statements
+- Bash scripting
 
 ##  Upcoming Projects
 
-* Package Manager Helper
 * Cron Job Scheduler
 * Network Information Tool
 * Disk Cleanup Utility
