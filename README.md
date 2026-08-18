@@ -19,6 +19,7 @@ Linux-Projects/
 ├── User-Management-Tool/
 ├── Process-Monitor/
 ├── Package-Manager-Helper/
+├── Disk-Cleanup-Utility/
 └── README.md
 ```
 
@@ -155,7 +156,7 @@ A Bash script that checks whether a specified process is currently running.
 * Linux process management
 
 ---
-## 5. Package Manager Helper
+## 6. Package Manager Helper
 
 **Description**
 
@@ -184,11 +185,45 @@ A Bash script that checks whether a Linux package is already installed and offer
 - Conditional statements
 - Bash scripting
 
+---
+
+## 7. Disk Cleanup Utility
+
+**Description**
+
+A Bash script that checks a specified Linux directory, displays its disk usage, finds files larger than 8 KB, and allows the user to delete them after confirmation.
+
+**Features**
+
+- Accepts a directory from the user
+- Checks whether the directory exists
+- Displays disk usage
+- Finds files larger than 8 KB
+- Handles directories with no large files
+- Asks for confirmation before deleting files
+- Deletes large files when the user chooses `yes`
+- Leaves files untouched when the user chooses `no`
+- Checks whether deletion was successful
+
+**Skills**
+
+- Variables
+- `read`
+- `if/else`
+- Nested conditions
+- `[ -d ]`
+- `[ -z ]`
+- `du -sh`
+- `find`
+- `rm`
+- Command substitution `$(...)`
+- Exit status `$?`
+- Bash scripting
+
 ##  Upcoming Projects
 
 * Cron Job Scheduler
 * Network Information Tool
-* Disk Cleanup Utility
 * Linux Mini Dashboard
 
 ---
