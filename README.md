@@ -20,6 +20,7 @@ Linux-Projects/
 ├── Process-Monitor/
 ├── Package-Manager-Helper/
 ├── Disk-Cleanup-Utility/
+├── Network-Information-Tool/
 └── README.md
 ```
 
@@ -220,10 +221,43 @@ A Bash script that checks a specified Linux directory, displays its disk usage, 
 - Exit status `$?`
 - Bash scripting
 
+---
+
+## 8.  Network Information Tool
+
+**Description**
+
+A Bash script that displays basic Linux network information and checks connectivity to a website provided by the user.
+
+**Features**
+
+- Displays the system hostname
+- Displays IP address information
+- Displays the default network route/gateway
+- Accepts a website or host from the user
+- Tests network connectivity using `ping`
+- Reports successful or failed connections
+
+**Skills**
+
+- Bash functions
+- Variables
+- `read`
+- `hostname`
+- `ip addr`
+- `ip route`
+- `grep`
+- `ping`
+- Command substitution (`$(...)`)
+- Pipes (`|`)
+- Exit status
+- `if / else`
+- Output redirection
+- `/dev/null`
+
 ##  Upcoming Projects
 
 * Cron Job Scheduler
-* Network Information Tool
 * Linux Mini Dashboard
 
 ---
