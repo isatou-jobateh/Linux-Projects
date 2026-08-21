@@ -21,6 +21,7 @@ Linux-Projects/
 ├── Package-Manager-Helper/
 ├── Disk-Cleanup-Utility/
 ├── Network-Information-Tool/
+├── Cron-Job-Scheduler /
 └── README.md
 ```
 
@@ -255,9 +256,47 @@ A Bash script that displays basic Linux network information and checks connectiv
 - Output redirection
 - `/dev/null`
 
+### 9. Cron Job Scheduler
+
+A Bash and Linux automation project that demonstrates how to schedule and automate recurring tasks using `cron` and `crontab`.
+
+**What I practiced:**
+
+* Creating and editing cron jobs with `crontab -e`
+* Viewing scheduled jobs with `crontab -l`
+* Understanding the five cron scheduling fields
+* Using `*` for recurring schedules
+* Running Bash scripts automatically with cron
+* Using absolute paths in cron jobs
+* Creating a logging script with timestamps
+* Redirecting scheduled task output to a log file
+* Testing and verifying that scheduled jobs execute
+* Understanding how cron uses the system's time and timezone
+
+**Project files:**
+
+* `cron-scheduler.sh` — configures and displays the cron job
+* `log-time.sh` — records the date and time whenever the scheduled task runs
+* `cron.log` — stores the execution history produced by the scheduled job
+
+**Example cron schedule:**
+
+```bash
+* * * * * /home/aisha_jobateh/Linux-Projects/Cron-Job-Scheduler/log-time.sh
+```
+
+This runs the logging script every minute.
+
+**Result:**
+
+The scheduled task was successfully executed multiple times and the execution timestamps were recorded in `cron.log`.
+
+**Skills demonstrated:**
+Bash scripting • Linux automation • cron • crontab • task scheduling • logging • system administration
+
+
 ##  Upcoming Projects
 
-* Cron Job Scheduler
 * Linux Mini Dashboard
 
 ---
