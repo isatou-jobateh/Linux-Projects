@@ -21,7 +21,8 @@ Linux-Projects/
 ├── Package-Manager-Helper/
 ├── Disk-Cleanup-Utility/
 ├── Network-Information-Tool/
-├── Cron-Job-Scheduler /
+├── Cron-Job-Scheduler/
+├── Linux-Mini-Dashboard/
 └── README.md
 ```
 
@@ -294,10 +295,40 @@ The scheduled task was successfully executed multiple times and the execution ti
 **Skills demonstrated:**
 Bash scripting • Linux automation • cron • crontab • task scheduling • logging • system administration
 
+### 10. Linux Mini Dashboard
 
-##  Upcoming Projects
+A Bash-based system monitoring tool that displays important Linux system information in one place.
 
-* Linux Mini Dashboard
+**What I practiced:**
+
+* Bash functions
+* Command substitution `$(...)`
+* `echo`
+* `hostname`
+* `uptime`
+* `top`
+* `grep`
+* Pipes `|`
+* `free -h`
+* `df -h`
+* `hostname -I`
+* `ps -e`
+* `wc -l`
+
+**Dashboard information:**
+
+* Hostname
+* System uptime
+* CPU usage
+* Memory usage
+* Disk usage
+* IP address
+* Number of running processes
+
+**Skills demonstrated:**
+Bash scripting • Linux system monitoring • Command-line tools • Process monitoring • Text filtering • Basic Linux system administration
+
+**Status:** Completed
 
 ---
 
