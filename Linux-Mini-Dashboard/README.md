@@ -15,7 +15,7 @@ The project was created to practice Bash scripting and Linux system administrati
 * Display information in a clear dashboard format
 * Strengthen Linux command-line skills
 
-## 🖥️ashboard Information
+## Dashboard Information
 
 The dashboard displays:
 
@@ -78,34 +78,41 @@ Run the dashboard:
 
 ## Example Output
 
-The dashboard presents system information in a simple terminal-based format, including hostname, uptime, CPU usage, memory usage, disk usage, IP address, and running processes.
-==============================================
-             LINUX SYSTEM DASHBOARD
-==============================================
+## Example Output
 
-Hostname: Aisha-Jobateh
+When the dashboard is executed, it displays a summary of important Linux system information:
 
-Uptime: 14:55:11 up 22 min, 1 user,
-load average: 0.00, 0.12, 0.14
+```text
+========================================================
+                 LINUX SYSTEM DASHBOARD
+========================================================
+
+Hostname:      Aisha-Jobateh
+Uptime:        14:55:11 up 22 min, 1 user, load average: 0.00, 0.12, 0.14
 
 CPU Usage:
-%Cpu(s): 1.1 us, 12.4 sy, 0.0 ni, 86.5 id
+%Cpu(s): 1.1 us, 12.4 sy, 0.0 ni, 86.5 id, 0.0 wa, 0.0 hi, 0.0 si, 0.0 st
 
 Memory Usage:
-              total        used        free
-Mem:           1.7Gi       394Mi       1.2Gi
-Swap:          1.0Gi        96Ki       1.0Gi
+               total        used        free      shared  buff/cache   available
+Mem:            1.7Gi       394Mi       1.2Gi       3.4Mi       159Mi       1.3Gi
+Swap:           1.0Gi        96Ki       1.0Gi
 
 Disk Usage:
 Disk Usage: 2.1M /home/aisha_jobateh
 
-IP Address: 172.31.152.8
+IP Address:    172.31.152.8
 
 Running Processes: 31
 
-==============================================
-             SYSTEM CHECK COMPLETE
-==============================================
+========================================================
+                 SYSTEM CHECK COMPLETE
+========================================================
+```
+
+> **Note:** The values shown above are examples. Hostname, uptime, CPU usage, memory usage, disk usage, IP address, and process count will change depending on the system where the script is executed.
+
+
 
 Example values will vary depending on the system.
 
